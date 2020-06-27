@@ -1,1 +1,2 @@
-# ArcoLinux-qtile
+# ArcoLinux-spectrwm
+
