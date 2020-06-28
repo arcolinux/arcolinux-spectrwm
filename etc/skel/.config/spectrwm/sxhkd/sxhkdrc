@@ -95,8 +95,8 @@ super + m
     pragha
 
 #Termite
-super + Return
-    termite
+#super + Return
+#    termite
 
 #Xkill
 super + Escape
@@ -104,16 +104,16 @@ super + Escape
 
 #Keyboard dependent
 #termite
-super + KP_Enter
-	termite
+#super + KP_Enter
+#	termite
 
 #################################################################
 # SUPER + SHIFT KEYS
 #################################################################
 
 #File-Manager
-super + shift + Return
-	thunar
+#super + shift + Return
+#	thunar
 
 #Keyboard dependent
 #File-Manager
@@ -125,8 +125,8 @@ super + shift + d
 	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
 #reload sxhkd:
-super + shift + s
-	pkill -USR1 -x sxhkd
+#super + shift + s
+#	pkill -USR1 -x sxhkd
 
 #Keyboard dependent
 #super + shift + KP_Enter
@@ -154,8 +154,8 @@ ctrl + alt + Prior
     conky-rotate -p
 
 #File-Manager
-ctrl + alt + b
-     thunar
+#ctrl + alt + b
+#     thunar
 
 #Catfish
 ctrl + alt + c
@@ -206,12 +206,12 @@ ctrl + alt + s
    spotify
 
 #Termite
-ctrl + alt + Return
-    termite
+#ctrl + alt + Return
+#    termite
 
 #termite
-ctrl + alt + t
-    termite
+#ctrl + alt + t
+#    termite
 
 #Vivaldi
 ctrl + alt + v
@@ -401,7 +401,7 @@ super + y
 
 #Picom Toggle
 ctrl + alt + o
-    ~/.config/bspwm/scripts/picom-toggle.sh
+    ~/.config/spectrwm/scripts/picom-toggle.sh
 
 #################################################################
 # SUPER + KEYS
@@ -415,9 +415,6 @@ super + f
 super + p
 	bspc node --state \~pseudo_tiled
 
-#kill
-super + q
-	bspc node -c
 
 #################################################################
 # SUPER KEYS
@@ -443,30 +440,17 @@ super + BackSpace
 # SUPER + ALT KEYS
 #################################################################
 
-# Move floating window
-super + alt + {_,shift + }{Left,Down,Up,Right}
-	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
 
 #################################################################
 # SUPER + CONTROL KEYS
 #################################################################
 
-# Cancel preselection
-super + ctrl + space
-	bspc node --presel-dir cancel
 
 #################################################################
 # SUPER + SHIFT KEYS
 #################################################################
 
 
-#Reload bspwm
-super + shift + r
-	~/.config/bspwm/bspwmrc
-
-#kill
-super + shift + q
-	bspc node -c
 
 #Logout
 super + shift + x
